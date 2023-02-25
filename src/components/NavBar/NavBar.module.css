@@ -5,8 +5,16 @@
   --sm-font: 'Poppins', sans-serif;
 }
 
-body{
-  font-family: var(--sm-font);
-
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
 }
 
+.navbrand {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+  }
+
+  /* #cartBadge {
+    margin-top: 8px;
+    background-color:#e5345b;
+  } */
