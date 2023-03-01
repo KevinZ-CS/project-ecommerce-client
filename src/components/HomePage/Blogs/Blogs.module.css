@@ -1,16 +1,3 @@
-.image {
-    transition: all 0.3s ease;
-  }
-
-.image:hover {
-    transform: scale(1.2);
-  }
-
-  .fontSize {
-    font-size: 22px;
-  }
-
-
 .title:before {
     position: absolute;
     content: "";

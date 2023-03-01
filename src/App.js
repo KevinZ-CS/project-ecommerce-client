@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar/NavBar";
 import Header from "./components/HomePage/Header/Header";
 import Collection from "./components/HomePage/Collection/Collection";
+import Blogs from "./components/HomePage/Blogs/Blogs";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <NavBar />
       <Header />
       <Collection />
+      <Blogs />
     </div>
   );
 }
