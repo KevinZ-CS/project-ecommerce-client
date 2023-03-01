@@ -4,8 +4,7 @@ import { Container, Row } from 'react-bootstrap';
 function Collection() {
 
     return (
-        <section className="py-5">
-            <Container>
+            <Container id='collection' className="py-5">
                 
                 <div className="text-center py-5">
                     <h2 className={` ${CollectionCSS.title} position-relative d-inline-block`}>Fall Collection</h2>
@@ -44,7 +43,6 @@ function Collection() {
                 </div>
 
             </Container>
-        </section>
     )
 }
 

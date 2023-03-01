@@ -4,7 +4,7 @@ import { Card, Container, Row } from 'react-bootstrap';
 function Blogs() {
 
     return(
-            <Container className="pt-0 py-5">
+            <Container id='blogs' className="pt-0 py-5">
                 <div className = "text-center py-5">
                      <h2 className = {` ${BlogsCSS.title} position-relative d-inline-block `}>Our Style Blog</h2>
                 </div>
