@@ -1,7 +1,7 @@
 import NavBarCSS from './NavBar.module.css';
 import './custom.css';
 import { useState } from "react";
-import { Navbar, Container, Nav, NavDropdown, Row, Col, Offcanvas } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBagShopping, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
@@ -29,7 +29,7 @@ function NavBar() {
 
     return (
     <>
-        <Navbar className={`fixed-top ${NavBarCSS.navbar}`} expand='sm'>
+        <Navbar className={`fixed-top ${NavBarCSS.navbar} bg-white` } expand='sm'>
             {/* expand dictates when the content collapses behind a button */}
             <Container>
                 <NavLink to='/' className={`  ${NavBarCSS.navbrand}  d-flex`}>
@@ -68,7 +68,6 @@ function NavBar() {
                       <NavDropdown title={<span className='text-uppercase text-dark text-center'>Shop</span>} renderMenuOnMount={true} 
                       onMouseEnter={showLightBox} onMouseLeave={hideLightBox} id="basic-nav-dropdown" onToggle={() => {handleClick()}}
                       className='dropdown-mega position-static'>
-
                       <Row>
 
                           <Col className="col-lg-2"></Col>
@@ -111,25 +110,16 @@ function NavBar() {
                           </Col>
 
                       </Row>
-                  
                       </NavDropdown>
-
                       <Nav.Link className='text-uppercase text-dark' href="/#collection">Collection</Nav.Link>
                       <Nav.Link className='text-uppercase text-dark' href="/#blogs">Blogs</Nav.Link>
                   </Nav>
-                  
-          
-
-                    
                 </Navbar.Collapse>
-
 
             </Container>
             
             <div id={lightBox}></div>
         </Navbar>
-
-
     </>
     )
 }
