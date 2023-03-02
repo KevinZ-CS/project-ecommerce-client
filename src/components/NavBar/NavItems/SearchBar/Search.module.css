@@ -7,12 +7,10 @@
     border-color: #000;
   }
   
-
 .searchInput:focus {
     border-color: black;
     box-shadow: none;
   } 
-  
   
 .button {
     background-color: black !important;

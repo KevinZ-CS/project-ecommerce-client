@@ -5,13 +5,15 @@ import { Navbar, Container, Nav, NavDropdown, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBagShopping, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
-import SearchBar from './NavItems/SearchBar';
+import SearchBar from './NavItems/SearchBar/SearchBar';
+import LoginForm from './NavItems/Login/LoginForm';
 
 
 function NavBar() {
 
     const [lightBox, setLightBox] = useState('');
     const [searchShow, setSearchShow] = useState(false);
+    const [loginShow, setShowLogin] = useState(false);
 
 
     const [loginStatus, setLoginStatus] = useState(false);
@@ -49,7 +51,7 @@ function NavBar() {
                 <button type='button' className={`border-0 ${NavBarCSS.button} px-3`}>
 
                 {loginStatus ? <FontAwesomeIcon icon={faUserCircle} />
-                        : <div className='' >Login</div> }
+                        : <div className='' onClick={() => setShowLogin(true)}>Login</div> }
 
                 </button>
 
@@ -125,6 +127,7 @@ function NavBar() {
             <div id={lightBox}></div>
         </Navbar>
         <SearchBar show={searchShow} setShow={setSearchShow} />
+        <LoginForm showLogin={loginShow} setShowLogin={setShowLogin} />
     </>
     )
 }
