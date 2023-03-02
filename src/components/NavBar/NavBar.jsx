@@ -7,6 +7,7 @@ import { faSearch, faBagShopping, faUserCircle } from '@fortawesome/free-solid-s
 import { NavLink } from 'react-router-dom';
 import SearchBar from './NavItems/SearchBar/SearchBar';
 import LoginForm from './NavItems/Login/LoginForm';
+import ShoppingCart from './NavItems/ShoppingCart/ShoppingCart';
 
 
 function NavBar() {
@@ -14,6 +15,7 @@ function NavBar() {
     const [lightBox, setLightBox] = useState('');
     const [searchShow, setSearchShow] = useState(false);
     const [loginShow, setShowLogin] = useState(false);
+    const [showCart, setShowCart] = useState(false);
 
 
     const [loginStatus, setLoginStatus] = useState(false);
@@ -48,14 +50,14 @@ function NavBar() {
                     <FontAwesomeIcon icon={faSearch} className='d-none d-md-block ' />
                 </button>
 
-                <button type='button' className={`border-0 ${NavBarCSS.button} px-3`}>
+                <button type='button' className={`border-0 ${NavBarCSS.button} px-2`}>
 
                 {loginStatus ? <FontAwesomeIcon icon={faUserCircle} />
                         : <div className='' onClick={() => setShowLogin(true)}>Login</div> }
 
                 </button>
 
-                <button type='button' className={`border-0 ${NavBarCSS.button}`}>
+                <button type='button' className={`border-0 ${NavBarCSS.button}`} onClick={() => setShowCart(true)}>
                     <FontAwesomeIcon icon={faBagShopping} />
                 </button>
                 </div>
@@ -128,6 +130,7 @@ function NavBar() {
         </Navbar>
         <SearchBar show={searchShow} setShow={setSearchShow} />
         <LoginForm showLogin={loginShow} setShowLogin={setShowLogin} />
+        <ShoppingCart showCart={showCart} setShowCart={setShowCart} />
     </>
     )
 }

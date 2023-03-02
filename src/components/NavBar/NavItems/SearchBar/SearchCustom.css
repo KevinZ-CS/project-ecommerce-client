@@ -1,6 +1,8 @@
 .modal-content {
     border-radius: 0px;
   }
+/* 
+  can put this in index css file */
 
 /* .input-field:focus {
     outline: none;
