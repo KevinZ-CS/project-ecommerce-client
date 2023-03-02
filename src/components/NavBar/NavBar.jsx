@@ -1,17 +1,21 @@
 import NavBarCSS from './NavBar.module.css';
-import './custom.css';
+import './NavCustom.css';
 import { useState } from "react";
 import { Navbar, Container, Nav, NavDropdown, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBagShopping, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
+import SearchBar from './NavItems/SearchBar';
 
 
 function NavBar() {
 
     const [lightBox, setLightBox] = useState('');
+    const [searchShow, setSearchShow] = useState(false);
+
 
     const [loginStatus, setLoginStatus] = useState(false);
+    
     //will need to revisit this
 
     const showLightBox = e => {
@@ -38,7 +42,7 @@ function NavBar() {
 
                 <div className='order-sm-2 icons me-5'>
 
-                <button type='button' className={`border-0 ${NavBarCSS.button} ${NavBarCSS.searchIcon}`}>
+                <button type='button' className={`border-0 ${NavBarCSS.button} ${NavBarCSS.searchIcon}`} onClick={() => setSearchShow(true)}>
                     <FontAwesomeIcon icon={faSearch} className='d-none d-md-block ' />
                 </button>
 
@@ -120,6 +124,7 @@ function NavBar() {
             
             <div id={lightBox}></div>
         </Navbar>
+        <SearchBar show={searchShow} setShow={setSearchShow} />
     </>
     )
 }
