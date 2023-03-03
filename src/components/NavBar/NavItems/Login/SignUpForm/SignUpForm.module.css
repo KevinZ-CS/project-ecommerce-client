@@ -1,0 +1,103 @@
+.button {
+    background-color: black !important;
+    color: #fff !important;
+    border-color: black;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+  
+.formTitle {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+
+.hide {
+    display: none;
+  }
+  
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+  }
+  
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+  }
+    
+.rightBorder {
+    border-right: none;
+  }
+
+.rightBorder:focus {
+    border-color: #000;
+  }
+  
+.formIcon {
+    background-color: white;
+    border-color: rgb(209, 207, 207);
+    border-radius: 0;
+  }
+  
+.blackOnFocus {
+    background-color: white!important;
+    border-color: black!important;
+    border-radius: 0;
+  }
+
+
+
+.errMsg {
+    /* background-color: lightpink; */
+    color: firebrick;
+    font-weight: bold;
+    /* padding: 0.5rem; */
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+  }
+
+.offScreen {
+    position: absolute;
+    left: -9999px;
+  }
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+  }
+  
+.firstLine {
+    padding-left: 4px;
+}
+
+/* below is for login successfully page */
+
+.successMargins {
+    margin-top: 157px;
+    margin-bottom: 157px;
+  }
+  
+.checkFont {
+    color: limegreen;
+    font-size: 70px;
+  
+  }
+    
+.signIn {
+    background-color: black;
+    color: #fff ;
+    border-color: black;
+    border-radius: 0px;
+    padding: 8px 16px;
+  }
+  
+.signIn:hover {
+    border-color: white;
+  }
+  

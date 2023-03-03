@@ -1,0 +1,6 @@
+.btn-close {
+    /* outline: none !important; */
+    box-shadow: none !important;
+  }
+/* targets close x button on modals */
+/* can add this to index css file */

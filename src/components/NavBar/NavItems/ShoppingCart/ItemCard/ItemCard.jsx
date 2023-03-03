@@ -64,7 +64,7 @@ function handleClickName() {
           
             <NavLink to={'/itempage/'} className={ItemCardCSS.itemName} onClick={handleClickName}><Card.Text>Shoes</Card.Text></NavLink>
             
-        <Container className="size-section2">
+        <Container className="selectSize">
 
             <div className={ItemCardCSS.ItemSizeFont}>S</div>
             <div className={ItemCardCSS.divider}>|</div>

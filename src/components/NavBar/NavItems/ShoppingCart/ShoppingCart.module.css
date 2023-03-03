@@ -9,8 +9,8 @@
     width: 150px;
     height: 44px;
     margin-top: 10px!important;
-    margin-left: 87px;
     margin-bottom: 20px!important;
+
     }
   
 .button:hover {
@@ -22,7 +22,6 @@
     }
 
 .subtotal {
-    padding-left: 80px;
     font-size: 20px;
       }
       
