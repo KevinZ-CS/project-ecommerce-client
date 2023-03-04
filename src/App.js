@@ -5,6 +5,7 @@ import Collection from "./components/HomePage/Collection/Collection";
 import Blogs from "./components/HomePage/Blogs/Blogs";
 import Footer from "./components/HomePage/Footer/Footer";
 import SignUpForm from "./components/NavBar/NavItems/Login/SignUpForm/SignUpForm";
+import ItemList from './components/ItemList/ItemList';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         </>} />
 
         <Route path='/signup' element={<SignUpForm />} />
+        <Route path='/shop' element={<ItemList />} />
+
 
       </Routes>
 

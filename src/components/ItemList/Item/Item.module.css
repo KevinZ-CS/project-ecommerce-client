@@ -1,0 +1,26 @@
+.itemName {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    
+  }
+
+.closeButton {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  
+.closeButton:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.cardHeader {
+    background-color: white;
+    border: none;
+}
+

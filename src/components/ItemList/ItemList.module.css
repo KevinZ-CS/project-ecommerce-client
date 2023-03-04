@@ -1,0 +1,26 @@
+.title:before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: black;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+.button {
+    color: #000!important;
+    background-color: white!important;
+    border-color: rgb(213, 213, 213)!important;
+  }
+
+
+
+.button:focus {
+    background-color: black!important;
+    color: white!important;
+    border-color: black!important;
+  } 
+
+

@@ -17,7 +17,7 @@ function ShoppingCart({ showCart, setShowCart }) {
     return (
         <>
              <Offcanvas show={showCart} onHide={handleClose} placement='end' className={ShoppingCartCSS.canvasSize}>
-                <Offcanvas.Header closeButton={'outline-none'}>
+                <Offcanvas.Header closeButton>
                 <Offcanvas.Title>My Bag</Offcanvas.Title>
                
                 </Offcanvas.Header>

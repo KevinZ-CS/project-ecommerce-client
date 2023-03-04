@@ -38,12 +38,14 @@
     background-color: white;
     border-color: rgb(209, 207, 207);
     border-radius: 0;
+    border-left: none;
   }
   
 .blackOnFocus {
     background-color: white!important;
     border-color: black!important;
     border-radius: 0;
+    border-left: none;
   }
 
 
