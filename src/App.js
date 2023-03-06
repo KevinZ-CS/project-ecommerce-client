@@ -6,6 +6,7 @@ import Blogs from "./components/HomePage/Blogs/Blogs";
 import Footer from "./components/HomePage/Footer/Footer";
 import SignUpForm from "./components/NavBar/NavItems/Login/SignUpForm/SignUpForm";
 import ItemList from './components/ItemList/ItemList';
+import ItemPage from './components/ItemList/Item/ItemPage/ItemPage';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 
         <Route path='/signup' element={<SignUpForm />} />
         <Route path='/shop' element={<ItemList />} />
+        <Route path='itempage' element={<ItemPage />} />
 
 
       </Routes>
