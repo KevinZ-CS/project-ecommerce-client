@@ -4,14 +4,9 @@
     border-radius: 0;
     border-width: thin;
     font-size: 14px;
-    width: 112px;
+    width: 100px;
    
   }
-
-.fontSize {
-    font-size: 14px;
- 
-}
 
 .addCartBtn {
     background-color: black!important;
@@ -30,5 +25,3 @@
 /* .test {
 border: 1px solid red;
 } */
-
-

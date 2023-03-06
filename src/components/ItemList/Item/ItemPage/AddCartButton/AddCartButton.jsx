@@ -1,9 +1,20 @@
+import AddCartButtonCSS from './AddCartButton.module.css';
+import './AddCartButtonCustom.css';
 import { useState } from "react";
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Dropdown, Col, DropdownButton, Button, ButtonGroup } from 'react-bootstrap';
 
 
 
 function AddCartButton({ item, size, cart, setCart, setShowCanvas }) {
+
+    const [pickSize, setPickSize] = useState('')
+
+
+function handleChange(e) {
+    setPickSize(e.target.value)
+}
+
+
 
     // const [cartMessageShow, setCartMessageShow] = useState(false);
     const [quantity, setQuantity] = useState(1)
@@ -109,32 +120,23 @@ function AddCartButton({ item, size, cart, setCart, setShowCanvas }) {
 
     return (
         <Container className=" px-0 mt-3">
-            {qtylimit ? <div className="mb-2 quantity-limit">Quantity is limited to 5 per customer for each size.</div> : null}
-        <Row>
-            <div className="spinner-width">
-                <div className="input-group number-spinner spinner-container">
-                    <span className="input-group-btn">
-                        <button className="btn btn-default quantityBtn rounded-0 btn-sm px-2 inputButton"  onClick={handleMinus}>-</button>
-                    </span>
 
-                    <input type="text" className=" text-center input-field" value={quantity} disabled={true}/>
-            
-                    {/* <input type="text" className=" text-center input-field" onChange={inputQuantity} value={quantity} /> */}
-                    {/* this input is glitchy need to fix */}
-                
-                    <span className="input-group-btn ">
-                        <button className="btn btn-default quantityBtn rounded-0 btn-sm px-2 inputButton"  onClick={handlePlus}>+</button>
-                    </span>
-                </div>
-            </div>
 
-            <div className="col-lg-5 cartDiv">
-            <button className="btn rounded-0 addCart" onClick={onAddcart} >Add to Cart</button>
-            </div>
-        </Row>
-        {/* <AddCartMessage showMessage={cartMessageShow} setMessage={setCartMessageShow} item={item} /> */}
+ 
+        <Dropdown as={ButtonGroup}  className='qty' >
+            <Dropdown.Toggle as='button' className={` btn`} >
+                {pickSize ? pickSize : '1'}
+            </Dropdown.Toggle>
 
-        
+            <Dropdown.Menu onToggle={handleChange}>
+              <Dropdown.Item as='button' value='1' onClick={handleChange} className='dropdownItemBg' > 1</Dropdown.Item>
+              <Dropdown.Item as='button' value='2' onClick={handleChange} className='dropdownItemBg'> 2</Dropdown.Item>
+              <Dropdown.Item as='button' value='3' onClick={handleChange} className='dropdownItemBg'> 3</Dropdown.Item>
+              <Dropdown.Item as='button' value='4' onClick={handleChange} className='dropdownItemBg '> 4</Dropdown.Item>
+            <Dropdown.Item as='button' value='5' onClick={handleChange} className='dropdownItemBg'> 5</Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
+       <Button className={AddCartButtonCSS.addCartBtn}>Add to Cart</Button>        
       
     </Container>
     )
