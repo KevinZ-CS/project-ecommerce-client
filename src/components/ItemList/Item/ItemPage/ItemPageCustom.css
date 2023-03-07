@@ -12,6 +12,8 @@
     min-width: 112px !important;
   }
 
+  /* min-width overrides width so you can not change width you can use min-width instead of width */
+
 .dropdownItemBg:hover {
     background-color:  rgb(237, 234, 234);
     color: #000;

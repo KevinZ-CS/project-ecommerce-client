@@ -5,6 +5,7 @@ import { Container, Row, Dropdown, Col, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { useParams } from "react-router-dom";
+import ReviewCard from './ReviewCard/ReviewCard';
 
 
 
@@ -89,14 +90,21 @@ function handleChange(e) {
     </Container> 
               {pickSize ?  <Button className={`${ItemPageCSS.addCartBtn} mt-3`}>Add to Cart</Button>    : null}
 
-
     </div>
+    </Col>
+    </Row>
 
-            </Col>
+            <hr className='mt-5'/>
 
+            <Container>
+                <h2 >Customer Reviews</h2>
+                <ReviewCard />
+                <ReviewCard />
+                <ReviewCard />
+                <ReviewCard />
+                <ReviewCard />
+            </Container>
 
-
-            </Row>
 
        </Container>
        
