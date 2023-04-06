@@ -1,0 +1,6 @@
+.selectSize .dropdown-menu {
+border: solid black;
+border-width: thin;
+border-radius: 0;
+font-size: 10px;
+}

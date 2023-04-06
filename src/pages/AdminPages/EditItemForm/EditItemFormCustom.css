@@ -1,0 +1,32 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+.edit-item .form-control {
+font-size: 12px;
+}
+
+.edit-item .form-control:focus {
+border-color: black;
+}
+
+.edit-item .form-label {
+font-size: 12px;
+margin-bottom: 0px;
+}
+
+.edit-item .form-select {
+font-size: 12px;
+}
+
+.edit-item .form-select:focus {
+border-color: black;
+}

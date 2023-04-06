@@ -1,0 +1,65 @@
+.cardUser {
+font-size: 20px;
+margin-left: -10px;
+}
+
+.starIcon {
+font-size: 16px;
+margin-left: -2px;
+}
+
+.cardBody {
+margin-top: -37px;
+}
+
+@media (max-width: 768px) { 
+.cardHeader {
+width: 100%;
+}
+.card {
+    text-align: start;
+    font-size: x-small;
+}
+.starIcon {
+    font-size: smaller;
+}
+.cardUser {
+    margin-left: -3px;
+    font-size: small;
+}
+}
+
+.starRating {
+color: rgba(0, 0, 0, 0.1);
+position: relative;
+display: inline-block;
+}
+  
+.foreground {
+color: black;
+position: absolute;
+display: flex;
+overflow: hidden;
+}
+  
+.background {
+display: flex;
+}
+
+.closeButton {
+position: absolute;
+font-size: 10px;
+color: gray;
+top: 5px;
+right: 3px;
+font-size: 12px;
+}
+
+.closeButton:focus {
+outline: none;
+box-shadow: none;
+}
+
+.closeButton:hover{
+color: blue;
+}

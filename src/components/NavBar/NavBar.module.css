@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+--lg-font: 'Kaisei Tokumin', serif;
+--sm-font: 'Poppins', sans-serif;
+}
+
+.navbar{
+box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbrand {
+letter-spacing: 2px;
+text-decoration: none;
+font-family: var(--lg-font);
+}
+
+.button {
+background-color: transparent;
+}
+
+.navLink {
+color: #000;
+text-decoration: none;
+margin-left: 16px;
+}
+
+.body-items {
+font-size: 10px;
+}
+
+.subHeader {
+padding-left: 15px;
+padding-bottom: 0px;
+font-weight: bold;
+}
+
+.searchIcon {
+position: relative;
+top: 3px;
+outline: none;
+}
+
+.burgerIcon {
+position: relative;
+right: 20px;
+}
+
+.cartBadge {
+font-size: 8px;
+background-color:#e5345b;
+}
+
+@media(max-width: 576px) {
+.searchIcon {
+display: none;
+}
+}
+
+

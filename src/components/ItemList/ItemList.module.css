@@ -1,0 +1,61 @@
+.title:before{
+position: absolute;
+content: "";
+width: 4px;
+height: 50px;
+background-color: black;
+left: -20px;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.button {
+color: #000!important;
+background-color: white!important;
+border-color: rgb(213, 213, 213)!important;
+}
+
+.button:focus {
+background-color: black!important;
+color: white!important;
+border-color: black!important;
+} 
+
+.alert {
+background-color: white;
+border: none;
+border-left: 4px solid rgb(22, 205, 116);
+border-radius: 0;
+color: black;
+box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+font-size: 14px;
+margin-top: 70px;
+margin-bottom: 10px;
+padding-top: 8px;
+padding-bottom: 8px;
+}
+ 
+.checkIcon {
+padding-top: 5px;
+font-size: 30px;
+color: rgb(22, 205, 116);
+padding-bottom: 5px;
+text-align: center; 
+vertical-align: middle;
+ }
+ 
+.alertMessage {
+padding-left: 10px;
+color: rgb(22, 205, 116);    
+ }
+ 
+.modalHeader {
+background-color: white;
+border: none;
+ }
+
+.checkIcon2 {
+font-size: 50px;
+color: rgb(22, 205, 116);
+}
+

@@ -1,0 +1,20 @@
+.adminSignUp .form-control {
+font-size: 12px;
+}
+
+.adminSignUp .form-control:focus {
+border-color: black;
+}
+
+.adminSignUp .form-label {
+font-size: 12px;
+margin-bottom: 0px; 
+}
+
+.adminSignUp .form-select {
+font-size: 12px;
+}
+
+.adminSignUp .form-select:focus {
+border-color: black;
+}

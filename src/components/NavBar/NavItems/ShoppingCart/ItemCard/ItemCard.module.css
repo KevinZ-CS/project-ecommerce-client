@@ -1,0 +1,56 @@
+.cardBorder {
+border: none;
+}
+  
+.imgSize {
+height: 100px;
+}
+  
+.closeButton {
+position: absolute;
+top: 0;
+right: 0;
+font-size: 10px;
+}
+  
+.closeButton:focus {
+outline: none;
+box-shadow: none;
+}
+
+.itemName {
+color: #000;
+text-decoration: none;
+font-size: 14px;
+}
+
+.ItemSizeFont {
+font-size: 10px;
+position: absolute;
+top: 88px;
+left: 120px;
+}
+  
+.divider {
+position:absolute;
+left: 129px;
+top: 83px;
+border: none;
+opacity: 35%;
+}
+
+.QtyDropdown {
+background-color: #fff;
+font-size: 10px;
+width: 100px;
+border: none;
+padding-right: 54px;
+position: absolute;
+top: 9px;
+left: 5px;
+}
+   
+.dropdownItemBg:hover {
+background-color:  rgb(237, 234, 234);
+color: #000;
+}

@@ -1,0 +1,26 @@
+.border {
+border-radius: 0px;
+}
+
+.searchInput {
+border-radius: 0px;
+border-color: #000;
+}
+  
+.searchInput:focus {
+border-color: black;
+box-shadow: none;
+} 
+  
+.button {
+background-color: black !important;
+color: #fff;
+border-color: black !important;
+border-radius: 0px;
+padding: 10px 28px;
+border: 2px solid white;
+}
+
+.button:hover {
+border-color: white!important;
+}

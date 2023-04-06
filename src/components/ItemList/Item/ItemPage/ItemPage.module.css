@@ -1,0 +1,82 @@
+.sizeToggle {
+color: #000;
+border-color: #000!important;
+border-radius: 0;
+border-width: thin;
+font-size: 14px;
+width: 112px;
+  }
+
+.fontSize {
+font-size: 14px;
+word-wrap: break-word;
+}
+
+.addCartBtn {
+background-color: black!important;
+border-width: thin!important;
+border-color: #000;
+width: 118px;
+height: 37px;
+color: white;
+margin-top: 3px;
+border-radius: 0;
+  }
+
+.disclosure {
+color: red;
+font-size: 10px;
+  }
+
+.margins {
+margin-top: 100px;
+margin-bottom: 250px;
+}
+
+.marginBottom {
+margin-bottom: 50px;
+}
+
+.starRating {
+color: rgba(0, 0, 0, 0.1);
+font-size: 1rem;
+position: relative;
+display: inline-block;
+}
+
+.starRatingSummary {
+color: rgba(0, 0, 0, 0.1);
+font-size: 1.2rem;
+position: relative;
+display: inline-block;
+}
+
+.foreground {
+color: #000;
+position: absolute;
+display: flex;
+overflow: hidden;
+}
+
+.background {
+display: flex;
+}
+
+.rating {
+font-size: 30px;
+color: gray;
+}
+
+.review {
+font-size: 11px;
+color: gray;
+}
+
+.dropdownItemBg:hover {
+background-color:  rgb(237, 234, 234);
+color: #000;
+}
+
+.dropdownItemBg {
+padding-left: 14px;
+}

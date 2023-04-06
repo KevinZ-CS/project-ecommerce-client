@@ -1,0 +1,30 @@
+.canvasSize {
+width: 300px!important;
+background-color: #352e44;
+opacity: 90%;
+}
+
+.button {
+background-color: transparent;
+border-width: thin!important;
+border-color: white;
+width: 150px;
+height: 44px;
+margin-top: 330px;
+}
+  
+.button:hover {
+color: white!important;
+background-color: black !important;
+border-color: #282727;
+}
+  
+.button:focus {
+box-shadow: none!important;
+}
+
+.headImg {
+margin-top: 10px;
+font-size: 60px;
+color: white;
+}

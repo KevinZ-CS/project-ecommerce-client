@@ -1,0 +1,23 @@
+.image {
+transition: all 0.3s ease;
+  }
+
+.image:hover {
+transform: scale(1.2);
+  }
+
+.fontSize {
+font-size: 22px;
+}
+
+
+.title:before {
+position: absolute;
+content: "";
+width: 4px;
+height: 50px;
+background-color: black;
+left: -20px;
+top: 50%;
+transform: translateY(-50%);
+  }

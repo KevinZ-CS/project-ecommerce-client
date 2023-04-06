@@ -1,0 +1,26 @@
+.canvasSize {
+width: 390px!important;
+}
+
+.button {
+background-color: black!important;
+border-width: thin!important;
+border-color: #000;
+width: 150px;
+height: 44px;
+margin-top: 10px!important;
+margin-bottom: 20px!important;
+}
+  
+.button:hover {
+color: white!important;
+}
+  
+.button:focus {
+box-shadow: none!important;
+}
+
+.subtotal {
+font-size: 20px;
+}
+      

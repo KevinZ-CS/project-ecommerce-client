@@ -1,0 +1,43 @@
+.titleFontSize {
+font-size: 30px;
+}
+
+.container {
+margin-top: 30px;
+margin-bottom: 50px;
+}
+
+.button {
+background-color: black;
+color: #fff ;
+border-color: black;
+border-radius: 0px;
+padding: 4px 14px;
+float: right;
+}
+
+.button:hover {
+border-color: white;
+}
+
+.eye {
+background-color: white;
+outline: none;
+}
+
+.check {
+font-size: 12px;
+}
+
+.footerText {
+font-size: 12px;
+}
+
+.loginbtn {
+border: none;
+background-color: white;
+}
+
+.errorMsg {
+font-size: 10px !important;
+}

@@ -1,0 +1,51 @@
+.titleFontSize {
+font-size: 30px;
+}
+
+.nameFontSize {
+font-size: 25px;
+}
+  
+.container {
+margin-top: 30px;
+margin-bottom: 50px;
+}
+  
+.button {
+background-color: black;
+color: #fff ;
+border-color: black;
+border-radius: 0px;
+padding: 4px 14px;
+}
+  
+.button:hover {
+border-color: white;
+}
+  
+.footerText {
+font-size: 12px;
+}
+  
+.loginbtn {
+border: none;
+background-color: white;
+}
+  
+.errorMsg {
+font-size: 10px !important;
+}
+
+.star {
+font-size: 1.2rem;
+cursor: pointer;
+}
+
+.radio {
+display: none;
+}
+
+.margins {
+margin-top: 100px;
+margin-bottom: 250px;
+}

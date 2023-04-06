@@ -1,0 +1,57 @@
+.itemName {
+color: #000;
+text-decoration: none;
+font-size: 14px;
+}
+
+.closeButton {
+font-size: 10px;
+float: right;
+color: gray;
+}
+  
+.closeButton:focus {
+outline: none;
+box-shadow: none;
+}
+
+.closeButton:hover {
+color: blue;
+}
+
+.cardHeader {
+background-color: white;
+border: none;
+padding-bottom: 10px;
+margin-bottom: -15px;
+}
+
+.editButton {
+float: left;
+font-size: 10px;
+color: gray;
+}
+
+.editButton:hover{
+color: blue;
+}
+
+.imgSpan {
+top: 35px;
+right: 35px;
+width: 35px;
+height: 35px;
+border-radius: 50%;
+color: white;
+font-size: 12px;
+}
+
+.imgSpan2 {
+top: 45px;
+right: 30px;
+width: 35px;
+height: 35px;
+border-radius: 50%;
+color: white;
+font-size: 12px;
+}

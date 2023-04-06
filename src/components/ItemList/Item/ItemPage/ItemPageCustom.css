@@ -1,0 +1,15 @@
+.dropdown-toggle::after {
+float:right;
+margin-top: 8%;
+margin-right: 0%;
+}
+
+.sizeButton .dropdown-menu {
+border: solid black;
+border-width: thin;
+border-radius: 0;
+min-width: 112px !important;
+}
+
+
+

@@ -1,0 +1,22 @@
+.title {
+margin-top: 80px;
+}
+
+.title:before {
+position: absolute;
+content: "";
+width: 4px;
+height: 50px;
+background-color: black;
+left: -20px;
+top: 50%;
+transform: translateY(-50%);
+  }
+
+.bottomMargin {
+margin-bottom: 148px;
+}
+
+.bottomMargin2 {
+margin-bottom: 120px;
+}

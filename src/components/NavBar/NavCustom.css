@@ -1,0 +1,49 @@
+.nav .dropdown-toggle::after {
+display: none; 
+}
+
+.nav .dropdown-menu {
+width: 100%;
+border-radius: 0%;
+border: #fff;
+border-top: 0.01px solid black;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+@media(min-width: 992px){
+.nav .dropdown:hover .dropdown-menu {
+display: block;
+margin-top: 0px;
+}
+}
+
+.navbar {
+padding-top: 5px;
+padding-bottom: 0px;
+}
+
+@keyframes slide {
+from {background: rgba(0, 0, 0, 0.05)}
+to { background: rgba(0, 0, 0, 0.4); }
+}
+  
+@media(min-width: 992px){
+#lightbox {
+position: fixed;
+top: 95px;
+left: 0;
+width: 100vw;
+height: 100vw;
+align-items: center;
+justify-content: center;
+backdrop-filter: brightness(50%);
+animation: slide 2s; 
+animation-fill-mode: forwards;
+}
+}
+
+
+
+
+
